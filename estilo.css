@@ -1,39 +1,145 @@
-body{
-    background-color:black ;
-    }
-main{
-    text-align:center;
-    color:white;
-    }
-    section{
-    background-color:purple;
-    height: 500px;
-    width:700px;
-    border-radius:50px;
-    margin-left:27%;
-    text-align:center;
-    }
-form{
-    margin-top:5%;
-    }
-input{
-    width:500px;
-    height: 30px;
-    border-radius:30px;
-    font-size:25px;
-    margin-left:20px;
-    }
-label{
-    font-size:25px;
-    color:white;
-    margin-top:5%;
-    text-align:left;
-    }
-button{
-    height: 40px;
-    width: 100px;
-    border-radius:30px;
-    color:white;
-    background-color:black;
-    font-size:20px;
-    }
+/*explicando um pouco o código:
+	(1)-adicionei ao cabeçalho as duas novas seções propostas na aula e, como o ensinado, adicionei a navegação através do id
+	(2)-no css inclui .articles article{text-align:cente;} para centralizar o conteúdo dos "cards de noticias"
+	(3)adicionei ao navbar o position:fixed; e o widht:100% para facilitar na navegação da página já que teria que 
+rolar ao inicio da página, para ir pra uma nova seção*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header li{
+    display: inline;
+
+}
+
+body>header{
+    background-color: #2f3640;
+    padding: 16px 0px;
+    color: aliceblue;
+    position: fixed;
+    width: 100%;
+
+}
+header li a{
+    color: aliceblue;
+    padding-right: 30px;
+    text-decoration: none;
+    
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container{
+    width: 100%;
+    margin: 0px auto;
+   
+}
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.articles article img{
+    /*height: 180px;
+*/
+    width: 100%;
+}
+.articles article{
+    width: 30%;
+    
+}
+section{
+    padding:16px 0;
+}
+section h2, article{
+    margin-bottom: 16px;
+}
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.articles article a{
+    background-color: black;
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.articles article a:hover{
+    background-color: blueviolet;
+    height:45px ;
+}
+.articles article{
+    text-align: center;
+}
+.articles article p,a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.articles article h3{
+    font-size: 24px;
+}
+section h2{
+    font-size: 32px;
+}
+#sports{
+    background-color: rgba(0, 255, 0, 0.2);
+}
+#sports .articles article a{
+    background-color:  rgba(0, 255, 0, 0.6);
+}
+#economy{
+    background-color: rgba(196, 196, 72, 0.829);
+}
+#economy .articles article a{
+    background-color: orangered;
+}
+#Entretenimento{
+    background-color: rgb(132, 224, 224);
+}
+#Entretenimento .articles article a{
+  background-color: rgb(182, 62, 62);
+  margin-top: 25px;
+}
+#Entretenimento h2{
+    color: rgb(39, 9, 15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#Pessoal{
+    background-color: rgb(3, 3, 3);
+}
+#Pessoal .articles article a{
+  background-color: rgb(62, 182, 172);
+  margin-top: 25px;
+}
+#Pessoal h2{
+    color: rgb(221, 218, 219);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#Pessoal p,h3 ,time{
+    color:rgb(221, 218, 219);
+
+}
+#Entretenimento .articles article img{
+    height: 180px;
+}
+#Entretenimento p,h3,time{
+    color:rgb(0, 0, 0);
+    
+
+}
+#Pessoal .articles article img{
+    height: 180px;
+}
+#Pessoal .articles article h3{
+    color: aliceblue;
+}
