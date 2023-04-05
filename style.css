@@ -1,0 +1,48 @@
+body{
+    display: block;
+    justify-content: center;
+    background-color: aqua;
+    font-family: beba;
+    color: whitesmoke;
+    font-size: 50px;
+
+}
+@font-face {
+    font-family: beba;
+    src: url(fontes/BebasNeue-Regular.ttf);
+}
+.container{
+    display: block;
+    width: 100%;
+   text-align: center;
+   margin-top: 10%;
+}
+.container form input{
+    display: block;
+    padding: 12px;
+    width: 320px;
+    margin-left: 37%;
+    margin-top: 40px;
+    border-radius: 15px;
+    font-family: beba;
+    font-size: 24px;
+    color: black;
+    
+}
+input::placeholder{
+    font-family: beba;
+    font-size: 24px;
+    color: black;
+}
+button{
+    background-color: blue;
+    color: whitesmoke;
+    font-family: beba;
+    font-size: 24px;
+    width: 200px;
+    border-radius: 15px;
+}
+form{
+    margin-top: 70px;
+    justify-content: center;
+}
