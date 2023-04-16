@@ -1,0 +1,114 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+  
+}
+body{
+    background-color: black;
+    font-family: 'Anton', sans-serif;
+}
+header{
+    position: fixed;
+    z-index: 1;
+}
+
+.cabecalho{
+    display: block;
+    color: rgb(233, 213, 233);
+    width: 100%;
+   
+}
+.secao1{
+    background-color: rgb(37, 12, 61);
+    display: flex;
+    justify-content: space-around;
+    color: beige;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+.secao1 h1{
+    background-color: rgb(37, 12, 61);
+    font-family: 'Anton', sans-serif;
+}
+.hamburguer {
+    display: block;
+     background-color: rgb(37, 12, 61);
+     align-items: center;
+     padding-top: 10px;
+     cursor: pointer;
+    
+}
+ span{
+     background-color: rgb(37, 12, 61);
+    display: block;
+    width: 20px;
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+}
+.secao2 {
+    background-color: rgb(187, 78, 238);
+    padding-left: 100px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+   
+
+}
+.mostrar{
+    display: none;
+}
+ul li{
+    width: 100%;
+    display: inline;
+    justify-content: space-around;
+    list-style:none ;
+    padding-left: 100px;
+}
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+}
+
+.secaoFormulario{
+    margin-top: 75px;
+    display: block;
+
+}
+.secaoFormulario h3{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.secaoFormulario #formulario input,button{
+    font-size: 18px;
+    display: block;
+    width: 440px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 25px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input::placeholder{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    font-size: 18px;
+    width: 165px;
+    background-color:green;
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
